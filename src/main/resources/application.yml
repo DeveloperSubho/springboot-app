@@ -1,0 +1,13 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: springboot-app
+  profiles:
+    include:
+      - complex
+
+configuration:
+  property:
+    value: Hello from property file
