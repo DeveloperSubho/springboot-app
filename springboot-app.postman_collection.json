@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "7eb8d976-ff00-4332-aa03-716c04da381e",
+		"name": "springboot-app",
+		"description": "Basic SpringBoot Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9001/student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "student-auth-key",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"12345\",\r\n    \"firstName\": \"John\",\r\n    \"lastName\": \"Doe\",\r\n    \"age\": \"30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9091/confProperty",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "student-auth-key",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9091/confProperty",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"confProperty"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9091/property",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "student-auth-key",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9091/property",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"property"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9091/autowire",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "student-auth-key",
+						"value": "1234",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9091/autowire",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"autowire"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
